@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-    "install-react": "cd ./client && npm i",
-    "install-server": "cd ./server && npm i",
-    "build-react": "cd ./client && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "concurrently \"npm:install-*\"; concurrently \"npm:build-react\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
