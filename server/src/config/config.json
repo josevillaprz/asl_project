@@ -14,7 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "mysql://oxau6zu5z0rjsbun:nbcx398opq6lfo2l@z3iruaadbwo0iyfp.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uui47dm61cgsvm8x",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql",
     "dialectOptions": {
       "ssl": {
