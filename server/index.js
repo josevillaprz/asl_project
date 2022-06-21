@@ -8,11 +8,14 @@ const questionCtrl = require("./src/controllers/questionCtrl");
 const choiceCtrl = require("./src/controllers/choiceCtrl");
 const authCtrl = require("./src/controllers/authCtrl");
 const isAuthenticated = require("./src/middlewares/authenticate");
+const path = require("path");
 
 // app
 const app = express();
 
 // middleware
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+
 app.use(
   session({
     secret: "keyboard cat",
