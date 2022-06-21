@@ -12,7 +12,6 @@ const path = require("path");
 
 // app
 const app = express();
-
 // middleware
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 
