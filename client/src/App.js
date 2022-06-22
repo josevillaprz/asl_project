@@ -22,11 +22,14 @@ const App = () => {
         localStorage.token = params.token;
       }
       // Make request to api to verify token is in database
-      const response = await axios("http://localhost:3000/auth/token", {
-        headers: {
-          token: localStorage.token,
-        },
-      });
+      const response = await axios(
+        "http://jose-quizapp.herokuapp.com/auth/token",
+        {
+          headers: {
+            token: localStorage.token,
+          },
+        }
+      );
       // set jwt state on request response
       setJwt(response.data.token);
     }

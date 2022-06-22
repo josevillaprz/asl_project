@@ -8,11 +8,14 @@ const Home = () => {
   useEffect(() => {
     // fetch quizzes from API
     async function fetchQuizzes() {
-      const response = await axios("http://localhost:3000/quizzes", {
-        headers: {
-          token: localStorage.token,
-        },
-      });
+      const response = await axios(
+        "http://jose-quizapp.herokuapp.com/quizzes",
+        {
+          headers: {
+            token: localStorage.token,
+          },
+        }
+      );
       setQuizzes(response.data);
     }
     fetchQuizzes();
