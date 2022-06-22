@@ -34,6 +34,9 @@ app.use(
 );
 
 // controllers
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+});
 app.use("/quizzes", isAuthenticated, quizCtrl);
 app.use("/questions", isAuthenticated, questionCtrl);
 app.use("/choices", isAuthenticated, choiceCtrl);
