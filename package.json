@@ -8,7 +8,8 @@
     "install-react": "cd ./client && npm i",
     "install-server": "cd ./server && npm i",
     "build-react": "cd ./client && npm run build",
-    "heroku-postbuild": "concurrently \"npm:install-*\"; concurrently \"npm:build-react\""
+    "build-server": "cd ./server && npm run db-update",
+    "heroku-postbuild": "concurrently \"npm:install-*\"; concurrently \"npm:build-*\""
   },
   "repository": {
     "type": "git",
