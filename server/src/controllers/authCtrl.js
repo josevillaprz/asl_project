@@ -17,7 +17,7 @@ router.get("/callback", async (req, res) => {
     "https://github.com/login/oauth/access_token",
     {
       client_id: "9764054f50ffca72ebec",
-      client_secret: "bba54888af390e35a0944f4eb8940ccde35efc5a",
+      client_secret: "baf608f58999944cc0b2570265042ef03952a598",
       code,
     }
   );
