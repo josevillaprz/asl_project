@@ -28,7 +28,8 @@ router.get("/callback", async (req, res) => {
   // add token to database
   const dbCreateToken = await LoginToken.create({ token: access_token });
   // redirect user to home
-  res.redirect("https://jose-quizapp.herokuapp.com?token=" + access_token);
+  // res.redirect("https://jose-quizapp.herokuapp.com?token=" + access_token);
+  res.json("working");
 });
 
 router.get("/token", async (req, res) => {
