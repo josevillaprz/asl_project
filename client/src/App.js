@@ -23,7 +23,7 @@ const App = () => {
       }
       // Make request to api to verify token is in database
       const response = await axios(
-        "http://jose-quizapp.herokuapp.com/auth/token",
+        "https://jose-quizapp.herokuapp.com/auth/token",
         {
           headers: {
             token: localStorage.token,

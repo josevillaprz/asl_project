@@ -9,7 +9,7 @@ const Home = () => {
     // fetch quizzes from API
     async function fetchQuizzes() {
       const response = await axios(
-        "http://jose-quizapp.herokuapp.com/quizzes",
+        "https://jose-quizapp.herokuapp.com/quizzes",
         {
           headers: {
             token: localStorage.token,

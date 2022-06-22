@@ -11,7 +11,7 @@ const Quiz = () => {
     // fetch quiz from api
     async function fetchQuiz() {
       const response = await axios(
-        `http://jose-quizapp.herokuapp.com/quizzes/${params.id}`,
+        `https://jose-quizapp.herokuapp.com/quizzes/${params.id}`,
         {
           headers: {
             token: localStorage.token,
