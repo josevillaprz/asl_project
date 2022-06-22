@@ -10,11 +10,10 @@ const authCtrl = require("./src/controllers/authCtrl");
 const isAuthenticated = require("./src/middlewares/authenticate");
 const path = require("path");
 
-app.use("/", express.static(path.join(__dirname, "../client/build")));
-
 // app
 const app = express();
 // middleware
+app.use("/", express.static(path.join(__dirname, "../client/build")));
 
 app.use(
   session({
