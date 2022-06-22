@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "## Description",
   "main": "index.js",
+  "engines": {
+    "node": "16.14.0"
+  },
   "scripts": {
     "start": "cd ./server && npm run dev",
     "install-react": "cd ./client && npm i",
