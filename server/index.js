@@ -34,13 +34,13 @@ app.use(
 );
 
 // controllers
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
-});
 app.use("/quizzes", isAuthenticated, quizCtrl);
 app.use("/questions", isAuthenticated, questionCtrl);
 app.use("/choices", isAuthenticated, choiceCtrl);
 app.use("/auth", authCtrl);
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+});
 
 // port
 app.listen(process.env.PORT || 3000, () => console.log(`Server is running`));
