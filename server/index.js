@@ -14,6 +14,7 @@ const path = require("path");
 const app = express();
 // middleware
 app.use("/", express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.use(
   session({
